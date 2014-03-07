@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<!-- 最新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel='stylesheet' type='text/css' href="css/bootstrap-theme.min.css">
+<link rel='stylesheet' href='css/app.css' />
+<title>选择文件夹</title>
+</head>
+<body style="padding-top: 0px;">
+	<div id="dir_input" class="container" style="z-index: 2; margin: 10px;">
+		<div class="input-group input-group-sm">
+			<span class="input-group-addon">@</span> 
+			<input id="input_dir" type="text" class="form-control" placeholder="文件夹路径">
+			<span class="input-group-btn">
+	        	<button id="submit" class="btn btn-default" type="button">确定</button>
+	      	</span>
+		</div>
+	</div>
+	<div class="container" style="height: 20px;"></div>
+	<div class="container" style="height: 400px; overflow: auto; margin: 0 auto; width: 80%;">
+		<div id="alldirs" class="btn-group-vertical" >
+			<a href="#" class="btn btn-default btn-lg btn-sm dirshow "  role="button">Link</a>
+			<div class="btn-group-vertical subdir">
+				<a href="#" class="btn btn-default btn-lg btn-sm dirshow"  role="button">Link</a>
+				<div class="btn-group-vertical subdir">
+					<a href="#" class="btn btn-default btn-lg btn-sm dirshow"  role="button">Link</a>
+					<div class="btn-group-vertical subdir">
+						<a href="#" class="btn btn-default btn-lg btn-sm dirshow"  role="button">Link</a>
+						<a href="#" class="btn btn-default btn-lg btn-sm dirshow"  role="button">Link</a>
+					</div>
+					<a href="#" class="btn btn-default btn-lg btn-sm dirshow"  role="button">Link</a>
+					<a href="#" class="btn btn-default btn-lg btn-sm dirshow"  role="button">Link</a>
+				</div>
+				<a href="#" class="btn btn-default btn-lg btn-sm dirshow"  role="button">Link</a>
+				<a href="#" class="btn btn-default btn-lg btn-sm dirshow"  role="button">Link</a>
+				<a href="#" class="btn btn-default btn-lg btn-sm dirshow"  role="button">Link</a>
+			</div>
+			<a href="#" class="btn btn-default btn-lg btn-sm dirshow" role="button">Link</a>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+	        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        		<h4 class="modal-title" id="myModalLabel">警告</h4>
+	      		</div>
+	      		<div class="modal-body">您还没有选择一个文件夹</div>
+	      		
+	    	</div><!-- /.modal-content -->
+	 	</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<!-- Bootstrap core JavaScript
+		================================================== -->
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script type='text/javascript' src="js/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script type='text/javascript' src="js/bootstrap.min.js"></script>
+	<script type='text/javascript' src="js/stickUp.min.js"></script>
+	<script type='text/javascript' src="js/choice.js"></script>
+</body>
+</html>

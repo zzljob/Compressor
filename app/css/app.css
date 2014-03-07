@@ -1,0 +1,58 @@
+body {
+	padding-top: 50px;
+}
+
+.starter-template {
+	padding: 40px 15px;
+	text-align: center;
+}
+
+#alldirs {
+	width: :80%;
+}
+
+#alldirs a.dirshow {
+	width: 150px;
+}
+
+#alldirs div.subdir {
+	margin-left: 40px;
+}
+
+.files {
+	padding: 0;
+	margin: 0;
+}
+
+.file {
+	padding: 2px;
+	margin: 2px;
+	width: 80px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+
+.file.focus {
+	background-color: #08C;
+	-webkit-border-radius: 4px;
+}
+
+.file .name {
+	width: 80px;
+	word-wrap: break-word;
+}
+
+.file.focus .name {
+	color: white;
+}
+
+.file .icon {
+	margin: auto;
+	margin-top: 0;
+	width: 60px;
+}
+
+.file.focus .icon {
+	-webkit-filter: invert(20%);
+}

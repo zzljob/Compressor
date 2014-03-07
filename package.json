@@ -1,0 +1,18 @@
+{
+  "main": "app/index.html",
+  "name": "YepCompiler",
+  "version": "0.1.0",
+  "description": "A very small Compiler for js/css By YepStudio dev.",
+  "single-instance": true,
+  "window": {
+    "width": 600,	
+	"min-width": 600,
+    "height": 500,
+	"min-height": 500,
+	"resizable": true,
+    "show": true,
+    "title": "YepCompiler",
+    "toolbar": false
+	
+  }
+}
